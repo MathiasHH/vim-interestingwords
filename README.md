@@ -1,3 +1,20 @@
+# What does Fork do?
+
+This fork change:
+
+nnoremap <silent> n :call WordNavigation(1)<cr>
+
+nnoremap <silent> N :call WordNavigation(0)<cr>
+
+to:
+
+nnoremap <silent> n :call WordNavigation(1)<cr>zz
+
+nnoremap <silent> N :call WordNavigation(0)<cr>zz
+
+
+so WordNavigation moves to center of the screen vertically.  
+
 # vim-interestingwords
 
 > Word highlighting and navigation throughout out the buffer.
